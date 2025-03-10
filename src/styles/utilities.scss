@@ -1,0 +1,19 @@
+@use "./variables" as *;
+
+@each $name, $value in $colors {
+  .text-#{$name} {
+    color: $value;
+  }
+  .bg-#{$name} {
+    background-color: $value;
+  }
+}
+
+@each $name, $value in $spacings {
+  .p-#{$name} {
+    padding: $value;
+  }
+  .m-#{$name} {
+    margin: $value;
+  }
+}

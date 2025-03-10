@@ -1,0 +1,70 @@
+{
+  "name": "fari-design-system",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "./dist/fari-design-system.umd.js",
+  "module": "./dist/fari-design-system.es.js",
+  "types": "./dist/src/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/fari-design-system.es.js",
+      "require": "./dist/fari-design-system.umd.js"
+    },
+    "./styles": "./dist/style.css",
+    "./dist/style.css": "./dist/style.css"
+  },
+  "scripts": {
+    "dev": "vite --config vite.config.ts",
+    "build": "vite build --config vite.config.ts",
+    "tsc": "vue-tsc --declaration --emitDeclarationOnly --declarationMap --outDir tsc-dist",
+    "lint": "eslint . --ext .js,.ts,.vue",
+    "lint:fix": "eslint . --ext .js,.ts,.vue --fix",
+    "format": "prettier --write src/"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@vue/compiler-sfc": "^3.5.13",
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.9",
+    "@typescript-eslint/eslint-plugin": "^8.26.0",
+    "@typescript-eslint/parser": "^8.26.0",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "@vue/tsconfig": "^0.7.0",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-n": "^16.6.2",
+    "eslint-plugin-prettier": "^5.2.3",
+    "eslint-plugin-promise": "^6.6.0",
+    "eslint-plugin-vue": "^10.0.0",
+    "prettier": "^3.5.3",
+    "sass": "^1.85.1",
+    "typescript": "~5.7.2",
+    "vite": "^6.2.0",
+    "vite-plugin-dts": "^4.5.3",
+    "vite-plugin-vue-devtools": "^7.7.2",
+    "vue-tsc": "^2.2.4"
+  },
+  "peerDependencies": {
+    "vue": "^3.5.13"
+  },
+  "description": "A Vue 3 component library with TypeScript and SCSS support",
+  "keywords": [
+    "vue",
+    "vue3",
+    "typescript",
+    "scss",
+    "component-library"
+  ],
+  "author": "Fari",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fari/fari-design-system.git"
+  }
+}
