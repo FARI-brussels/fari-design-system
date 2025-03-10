@@ -18,7 +18,6 @@ export default defineConfig({
       copyDtsFiles: true,
       outDir: [
         'dist',
-        'types'
       ],
       include: ['src/**/*'],
       exclude: ['src/ignore'],

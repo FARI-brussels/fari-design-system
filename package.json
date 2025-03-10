@@ -1,6 +1,6 @@
 {
   "name": "fari-design-system",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "type": "module",
   "main": "./dist/fari-design-system.umd.js",
   "module": "./dist/fari-design-system.es.js",
