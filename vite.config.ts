@@ -20,10 +20,10 @@ export default defineConfig({
         'dist',
         'types'
       ],
-      // include: ['src/index.ts'],
+      include: ['src/**/*'],
       exclude: ['src/ignore'],
       // staticImport: true,
-      // rollupTypes: true,
+      rollupTypes: true,
       insertTypesEntry: true,
       compilerOptions: {
         declarationMap: true
