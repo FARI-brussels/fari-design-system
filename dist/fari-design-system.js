@@ -34,4 +34,3 @@ export {
   _ as MyButton,
   f as styles
 };
-//# sourceMappingURL=fari-design-system.es.js.map
